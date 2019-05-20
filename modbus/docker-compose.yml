@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  modbus_feeder:
+    build: .
+    container_name: modbus_feeder
+
+networks:
+  default:
+    external:
+       name: influx-net
