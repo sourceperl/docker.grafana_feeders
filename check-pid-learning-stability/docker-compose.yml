@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  pid-stability-check:
+    build: .
+    image: pid-stability-check
+    container_name: pid-stability-check
+
+networks:
+  default:
+    external:
+       name: influx-net

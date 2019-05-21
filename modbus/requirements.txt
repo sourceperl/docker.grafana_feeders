@@ -1,2 +1,0 @@
-influxdb==5.2.1
-git+git://github.com/sourceperl/pyHMI@v0.0.4
