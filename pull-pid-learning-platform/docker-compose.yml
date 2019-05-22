@@ -5,6 +5,7 @@ services:
     build: .
     image: pull-pid-platform
     container_name: pull-pid-platform
+    restart: always
 
 networks:
   default:

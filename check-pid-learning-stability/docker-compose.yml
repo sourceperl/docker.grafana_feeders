@@ -5,6 +5,7 @@ services:
     build: .
     image: pid-stability-check
     container_name: pid-stability-check
+    restart: always
 
 networks:
   default:
