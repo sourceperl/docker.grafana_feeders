@@ -41,6 +41,9 @@ if __name__ == '__main__':
     client = InfluxDBClient(host="influxdb", port=8086)
     client.switch_database("mydb")
 
+    # wait PyHMI modbus thread first polling (avoid default 0 value)
+    time.sleep(2.0)
+
     # feed influxdb
     while True:
         try:
