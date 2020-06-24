@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  pull-pid-platform:
+    build: .
+    image: http-rest-srv
+    container_name: http-rest-srv
+    restart: always
+    ports:
+      - "5000:5000"
+
+networks:
+  default:
+    external:
+       name: influx-net
