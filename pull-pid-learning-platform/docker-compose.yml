@@ -10,4 +10,4 @@ services:
 networks:
   default:
     external:
-       name: influx-net
+       name: influxdb-net
